@@ -28,6 +28,66 @@ function MediaCard() {
   );
 }
 
+function UploadFile() {
+  return (
+    <>
+      <div className="container">
+        <HeadPanel />
+        <div className="row">
+          <div className="col-3">
+            <ProfileCard />
+          </div>
+          <div className="col-9">
+            <h5>Upload Files</h5>
+            <div className="row">
+              <form>
+                <div class="row mt-2">
+                  <div class="col">
+                    <div class="text-center">
+                      <img width="100%" height="350px" />
+                      <img class="img-fluid" height="250px" />
+                      <div class="image-text-centered lead">
+                        Drop image here
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-text d-flex mb-2">
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      id="validatedCustomFile"
+                      required
+                    />
+                    <label class="custom-file-label" for="validatedCustomFile">
+                      Choose file...
+                    </label>
+                    <div class="invalid-feedback">
+                      Example invalid custom file feedback
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-outline-dark ml-1">
+                    Upload
+                  </button>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center lead">
+                    <button class="badge badge-dark m-1">Sepia</button>
+                    <button class="badge badge-dark m-1">Gray</button>
+                    <button class="badge badge-dark m-1">Brightness</button>
+                    <button class="badge badge-dark m-1">Contrast</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
 function MediaPage() {
   return (
     <div className="container">
